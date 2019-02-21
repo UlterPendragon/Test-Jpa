@@ -48,7 +48,7 @@ public class TestJpa {
 		}
 		
 
-		TypedQuery<Client> empruntsdunclient = em.createQuery("select a from Client a where a.id ='2'", Client.class);
+		TypedQuery<Client> empruntsdunclient = em.createQuery("select a from Client a where a.id ='1'", Client.class);
 		Client resultemprunstdunclient = empruntsdunclient.getSingleResult();
 			for(Emprunt f : resultemprunstdunclient.getEmprunts()){
 				for(Livre l : f.getLivres()){
